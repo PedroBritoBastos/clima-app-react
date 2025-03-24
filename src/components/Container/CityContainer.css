@@ -1,0 +1,118 @@
+.city-container {
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 1.5em;
+  height: fit-content;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.style-background {
+   display: none;
+}
+
+.city-info {
+   font-size: 2.5em;
+   display: flex;
+}
+.city-name, .city-icon {
+   margin-left: .5em;
+}
+.city-icon {
+   color: white;
+}
+.climate-info {
+   display: flex;
+   align-items: center;
+   gap: .5em;
+   margin: 1em 1.25em;
+}
+.climate-info .climate-icon {
+   color: white;
+}
+
+.climate-value {
+   margin-left: 1.25em;
+}
+
+/* container de info adicionais */
+.aditional-container {
+   display: flex;
+   justify-content: center;
+   z-index: 2;
+}
+.aditionalInfo-list {
+   list-style: none;
+   padding: 2em;
+}
+.aditionalInfo-list li {
+   display: flex;
+   align-items: center;
+   margin: 1em 0;
+   gap: .5em;
+   color: var(--font);
+   font-size: 1.1em;
+}
+
+.city-container-wrapper {
+   display: flex;
+   flex-direction: column;
+}
+
+.city-info-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   z-index: 2;
+}
+
+
+
+@media screen and (min-width: 480px) {
+   .city-container-wrapper {
+      display: flex;
+      flex-direction: row;
+   }
+
+   .aditionalInfo-list {
+      padding-top: 0;
+   }
+   
+}
+
+@media screen and (min-width: 1000px) {
+   .city-container {
+      justify-content: center;
+      gap: 5em;
+      height: 255px;
+      margin-bottom: 0;
+   }
+
+   .city-container::before {
+      display: none;
+   }
+
+   .style-background {
+      display: block;
+      width: 30em;
+      height: 15em;
+      background-color: #335d7a;
+      position: absolute;
+      left: 0;
+      padding-top: 1.5em;
+      border-radius: 0 0 100px 0;
+   }
+
+   .city-container {
+      padding-top: 0;
+   }
+
+   .city-info-container, .aditional-container {
+      padding-top: 1.5em;
+   }
+
+   .city-info-container {
+      margin-right: 2.5em;
+   }
+
+}

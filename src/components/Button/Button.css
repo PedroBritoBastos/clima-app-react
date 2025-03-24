@@ -1,0 +1,7 @@
+.searchBtn {
+   height: 30px;
+   width: 8em;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}

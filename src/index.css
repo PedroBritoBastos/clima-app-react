@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --navbar: rgba(59, 116, 156, 1);
+  --default-color: rgba(13, 24, 31, 0.973);
+  --container: #3e79a3;
+  --font: rgba(255, 255, 255, 0.9);
+  --input-background: rgba(255, 255, 255, 0.5);
+  --input-font: rgba(0, 0, 0, 0.3);
+}
+
+html {
+  width: fit-content;
+  height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(19,34,44,1) 41%, rgba(32,54,69,1) 77%);
+  box-sizing: border-box;
+  color: var(--default-color);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.gradient-max {
+  background: linear-gradient(327deg, rgba(65,133,65,1) 0%, rgba(43,230,43,1) 58%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-min {
+  background: linear-gradient(327deg, rgba(141,64,64,1) 0%, rgba(232,59,59,1) 58%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-white {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 58%, rgba(231,227,227,1) 83%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media screen and (min-width: 625px) {
+  html {
+    width: 100vw;
+  }
+}
