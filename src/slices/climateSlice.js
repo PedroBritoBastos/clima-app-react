@@ -11,6 +11,10 @@ const initialState = {
       seaLevel: 0,
       humidity: 0,
       pressure: 0
+   },
+   wind: {
+      speed: 0,
+      gust: 0
    }
 };
 
@@ -38,9 +42,13 @@ const climateSlice = createSlice({
          state.aditionalInfo.seaLevel = action.payload.seaLevel;
          state.aditionalInfo.humidity = action.payload.humidity;
          state.aditionalInfo.pressure = action.payload.pressure;
+      },
+      getWindInfo: (state, action) => {
+         state.wind.speed = action.payload.speed;
+         state.wind.gust = action.payload.gust;
       }
    }
 })
 
-export const { getMinValue, getMaxValue, getCity, getClimate, getWeatherId, getAditionalInfo } = climateSlice.actions;
+export const { getMinValue, getMaxValue, getCity, getClimate, getWeatherId, getAditionalInfo, getWindInfo } = climateSlice.actions;
 export default climateSlice.reducer;

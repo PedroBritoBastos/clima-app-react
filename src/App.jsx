@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar/Navbar"
 import Container from "./components/Container/Container"
 import CityContainer from "./components/Container/CityContainer";
+import WindContainer from "./components/Container/WindContainer";
 
 import getApiData from "./services/api";
 
@@ -35,8 +36,8 @@ function App() {
       <Navbar/>
       <div className="wrapper">
         <CityContainer city={city} climate={climate} icon={weatherIcon}/>
-        <Container tempInfo={'min-container'} tempValue={'min-value'} temp={min} icon={minIcon} infoType={"min"} contentAfter={'info-after-min'} gradient={'gradient-min'} colorIcon={'min-icon'}/>
         <Container tempInfo={'max-container'} tempValue={'max-value'} temp={max} icon={maxIcon} infoType={"máx"} contentAfter={'info-after-max'} gradient={'gradient-max'} colorIcon={'max-icon'}/>
+        <WindContainer/>
       </div>
     </>
   )

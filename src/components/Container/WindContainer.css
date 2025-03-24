@@ -1,0 +1,62 @@
+.wind-container {
+   width: 90%;
+   justify-content: space-between;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+.title-icon {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1em;
+   margin-top: 3em;
+}
+.title-icon h1 {
+   font-size: 2.2em;
+   color: var(--font);
+}
+.wind-icon {
+   font-size: 2.2em;
+   color: var(--font);
+}
+
+.wind-info-list {
+   width: 100%;
+   background-color: rgba(19, 50, 71, 0.651);
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   list-style: none;
+   justify-content: center;
+   border-radius: 20px 20px 0 0;
+   box-sizing: border-box;
+   padding: .5em;
+}
+.wind-info-list li {
+   width: 80%;
+   display: flex;
+   color: var(--font);
+   margin: .5em 0;
+}
+.wind-info-list li p {
+   margin-left: .5em;
+   font-size: 1.1em;
+}
+
+.wind-info-icon {
+   margin-left: 1em;
+}
+
+@media screen and (min-width: 480px) {
+   .wind-container {
+      width: 100%;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   .wind-container {
+      margin-bottom: auto;
+   }
+}

@@ -5,13 +5,13 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 // redux
 import {useSelector, useDispatch} from "react-redux";
-import { getCity, getClimate, getMaxValue, getMinValue, getWeatherId, getAditionalInfo } from '../../slices/climateSlice';
+import { getCity, getClimate, getMaxValue, getMinValue, getWeatherId, getAditionalInfo, getWindInfo } from '../../slices/climateSlice';
 
 // data
 import cities from '../../services/Cidades.json';
 import getApiData from '../../services/api';
 
-const Button = ({replaceInputValue, selected}) => {
+const Button = ({selected}) => {
   const state = useSelector((state) => state.climate.value);
   const dispatch = useDispatch();
 
@@ -35,8 +35,10 @@ const Button = ({replaceInputValue, selected}) => {
       humidity: res.main.humidity,
       pressure: res.main.pressure
    }));
-   
-   console.log(res)
+   dispatch(getWindInfo({
+      speed: res.wind.speed,
+      gust: res.wind.gust
+   }))
   }
 
   return (

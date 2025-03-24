@@ -18,14 +18,14 @@
    gap: 1em;
    align-items: center;
    flex: 1;
+   color: var(--font);
 }
 .temp-info p {
-   font-size: 2.5em;
-   text-transform: uppercase;
+   font-size: 2.2em;
    margin-left: .5em;
 }
 .cloud {
-   font-size: 4.2em;
+   font-size: 2.6em;
    margin-right: .5em;
 }
 
@@ -62,19 +62,6 @@
    border-radius: 40px 0 15px 15px;
 }
 
-.info-after-min::after {
-   content: "";
-   display: block;
-   width: 15em;
-   height: 8em;
-   border-radius: 50%;
-   background-color: #8d4040;
-   position: absolute;
-   bottom: 0;
-   left: 14em;
-   display: none;
-}
-
 .info-after-max::after {
    content: "";
    display: block;
@@ -84,16 +71,7 @@
    background-color: #418541;
    position: absolute;
    bottom: 0;
-   left: 14em;
-   display: none;
-}
-
-.max-icon {
-   color: #4bc74b;
-}
-
-.min-icon {
-   color: rgb(226, 46, 46);
+   left: 16em;
 }
 
 .unit {

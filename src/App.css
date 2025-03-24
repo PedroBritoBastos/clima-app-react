@@ -14,7 +14,7 @@
     gap: 1em;
     grid-template-areas: 
       'city city'
-      'min max'
+      'max wind'
     ;
   }  
 }
