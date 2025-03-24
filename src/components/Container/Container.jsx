@@ -6,7 +6,7 @@ import { faTornado } from '@fortawesome/free-solid-svg-icons';
 const Container = ({tempInfo, tempValue, temp, icon, infoType, contentAfter, gradient, colorIcon}) => {
 
   return (
-    <div className={`info ${tempInfo} ${contentAfter}`}>
+    <div className={`info ${tempInfo} ${contentAfter} temp-container`}>
       {/* indicação de max e min */}
       <div className='temp-info'>
          <p className={`bold ${gradient}`}>{infoType}</p>

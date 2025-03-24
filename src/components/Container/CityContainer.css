@@ -5,6 +5,7 @@
   height: fit-content;
   position: relative;
   overflow-y: hidden;
+  width: 90%;
 }
 
 .style-background {
@@ -78,6 +79,9 @@
       padding-top: 0;
    }
    
+   .city-container {
+      width: 100%;
+   }
 }
 
 @media screen and (min-width: 1000px) {
