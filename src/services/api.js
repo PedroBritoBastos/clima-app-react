@@ -1,9 +1,8 @@
-const apiKey = '2e04893b116229d55f90fc8b1c077c58';
+const apiKey = import.meta.env.VITE_API_KEY;
 
 import cidades from './Cidades.json'
 
 const getApiData = async (city) => {
-
    let res;
    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`;
 
