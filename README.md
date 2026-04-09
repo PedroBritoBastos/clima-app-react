@@ -1,12 +1,14 @@
-# React + Vite
+# Sobre o projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi feito para praticar o consumo de APIs. É um projeto com uma interface simples em React que busca dados da API OpenWeather para trazer informações climáticas da cidade selecionada.
 
-Currently, two official plugins are available:
+<img width="1917" height="913" alt="image" src="https://github.com/user-attachments/assets/ff25b865-868c-44e6-85dd-2c02737716e4" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tecnologias
 
-## Expanding the ESLint configuration
+- React com Vite
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Como rodar o projeto
+
+O projeto está disponível para acesso no link do deploy:
+https://clima-app-react-rosy.vercel.app/
