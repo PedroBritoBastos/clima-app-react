@@ -1,0 +1,20 @@
+.container {
+  grid-area: temperatureContainer;
+}
+
+.temperatureValue-city {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.temperatureValue-value {
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  padding: 1rem 0;
+}
