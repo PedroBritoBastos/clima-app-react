@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg-app: #cad8ec; /* background do app */
+  --bg-logo: #4b6c93; /* background do container da logo */
+  --bg-base: #4b6c93; /* background base */
+  --bg-button-base: #4b6c93; /* background base dos botoes */
+  --bg-container: #edf1f8; /* background dos containeres */
+  --bg-select: #f6f8fb; /* background do select de cidades */
+  --color-base: #425873; /* cor de fonte base */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Evita scroll lateral bugado */
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-app);
+  color: var(--default-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}

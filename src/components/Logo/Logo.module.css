@@ -1,0 +1,16 @@
+.container {
+  grid-area: logoContainer;
+  background-color: var(--bg-logo);
+
+  & .title {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  & .developedby {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
