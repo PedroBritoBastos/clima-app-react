@@ -1,0 +1,9 @@
+.container {
+  background-color: var(--bg-base);
+  width: 100%;
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+  border-radius: 0.375rem;
+  margin-bottom: 2rem;
+}
