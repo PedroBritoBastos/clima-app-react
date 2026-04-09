@@ -1,0 +1,8 @@
+.container {
+  grid-area: infoContainer;
+}
+
+.info {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
